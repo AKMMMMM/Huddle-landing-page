@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  /* Colors */
+
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+  /* ### Headings font-family*/
+
+  --headings: "Poppins", sans-serif;
+
+  /* ### Body font-family */
+
+  --body: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body);
+  background-color: var(--Violet);
+  background-image: url("/images/bg-desktop.svg");
+  background-size: cover;
+  max-height: 100vh;
+  font-family: var(--body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2.3rem;
+  gap: 3.5rem;
+}
+
+.illustration {
+  margin-top: 5.5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article h1 {
+  color: white;
+  font-family: var(--headings);
+  max-width: 80%;
+  font-size: 2.1rem;
+}
+
+article p {
+  color: white;
+  margin-top: -10px;
+  opacity: .7;
+}
+
+button {
+  padding: 12px 60px;
+  color: var(--Violet);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--body);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--Soft-Magenta);
+  color: white;
+}
+
+
+footer {
+  float: right;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  color: white;
+  transform: translateX(-50px);
+}
+
+.fa-facebook-f {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: var(--Violet);
+}
+
+.fa-facebook-f:hover {
+  cursor: pointer;
+  background-color: var(--Violet);
+  color: var(--Soft-Magenta);
+}
+
+.fa-twitter {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: var(--Violet);
+}
+
+.fa-twitter:hover {
+  cursor: pointer;
+  background-color: var(--Violet);
+  color: var(--Soft-Magenta);
+}
+
+.fa-instagram {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: var(--Violet);
+}
+
+.fa-instagram:hover {
+  cursor: pointer;
+  background-color: var(--Violet);
+  color: var(--Soft-Magenta);
+}
+
+@media (max-width:1000px) {
+  main {
+    display: block;
+  }
+}
+
+@media (max-width:770px) {
+  body {
+    text-align: center;
+    background-color: var(--Violet);
+  background-image: url("/images/bg-mobile.svg");
+  background-size: cover;
+  }
+
+  article h1 {
+    font-size: 1.4rem;
+    margin: 30px auto;
+  }
+
+  article p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  .illustration {
+    max-width: 400px;
+  }
+
+  footer {
+    transform: translateX(-110px);
+  }
+}
